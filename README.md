@@ -27,6 +27,11 @@ cd ./Defects-Location-For-Metal-Surface/Interface
 ```
 
 ```
+mkdir "media" "media/predictedImages"
+
+```
+
+```
 py manage.py makemigrations
 
 ```
