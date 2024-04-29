@@ -1,0 +1,226 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Classes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/predict">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/predict">Prediction</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href='/classes'>Classes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div>
+            <center><h1 style="margin:20px;">Class Names</h1></center>
+          </div>
+
+        <div class="container">
+          <table>
+            <tbody>
+              <tr>
+                <td>  
+          <div class="card mb-3 " style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/crease.jpg' %}" class="img-fluid rounded-start" alt="crease" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Crease</h5>
+                  <p class="card-text">A crease is a vertical transverse fold, with regular or irregular spacing across the strip, or
+                    at the edge of the strip. The main reason is the local yield along the moving direction of the strip
+                    in the uncoiling process.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+            <td>
+          <div class="card mb-3" style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/crescent_gap.jpg' %}" class="img-fluid rounded-start" alt="crescent_gap" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Crescent Gap</h5>
+                  <p class="card-text"> In the production of steel strip, cutting sometimes results in defects, just like half
+                    a circle.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="card mb-3" style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/inclusion.jpg' %}" class="img-fluid rounded-start" alt="inclusion" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Inclusion</h5>
+                  <p class="card-text"> Inclusion is a typical defect of metal surface defects, usually showing small spots,
+                    fish scale shape, strip shape, block irregular distribution in the strip of the upper and lower surface
+                    (global or local), and is often accompanied by rough pockmarked surfaces. Some inclusions are
+                    loose and easy to fall off and some are pressed into the plate.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card mb-3" style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/oil_spot.jpg' %}" class="img-fluid rounded-start" alt="oil_spot" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Oil Spot</h5>
+                  <p class="card-text"> An oil spot is usually caused by the contamination of mechanical lubricant, which will
+                    affect the appearance of the product.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="card mb-3" style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/punching_hole.jpg' %}" class="img-fluid rounded-start" alt="punching_hole" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Punching Hole</h5>
+                  <p class="card-text"> In the production line of the strip, the steel strip needs to be punched according to the
+                    product specifications; mechanical failure may lead to unwanted punching, resulting in punching
+                    defects.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card mb-3" style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/rolled_pit.jpg' %}" class="img-fluid rounded-start" alt="rolled_pit" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Rolled Pit</h5>
+                  <p class="card-text">  Rolled pits are periodic bulges or pits on the surface of a steel plate that are punctate,
+                    flaky, or strip-like. They are distributed throughout the strip length or section, mainly caused by
+                    work roll or tension roll damage.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+          <tr>
+            <td>
+          <div class="card mb-3" style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/silk_spot.jpg' %}" class="img-fluid rounded-start" alt="silk_spot" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Silk Spot</h5>
+                  <p class="card-text">  A local or continuous wave-like plaque on a strip surface that may appear on the upper
+                    and lower surfaces, and the density is uneven in the whole strip length direction. Generally,
+                    the main reason lies in the uneven temperature of the roller and uneven pressure.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card mb-3" style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/waist_folding.jpg' %}" class="img-fluid rounded-start" alt="waist_folding" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Waist Folding</h5>
+                  <p class="card-text"> There are obvious folds in the defect parts, a little more popular, a little like
+                    wrinkles, indicating that the local deformation of the defect is too large. The reason is due to
+                    low-carbon.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+          <tr>
+            <td>
+          <div class="card mb-3" style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/water_spot.jpg' %}" class="img-fluid rounded-start" alt="water_spot">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Water Spot</h5>
+                  <p class="card-text"> A water spot is produced by drying in production. Under different products and
+                    processes, the requirements for this defect are different. However, because the water spots are
+                    generally with low contrast, and are similar to other defects such as oil spots, they are usually
+                    detected by mistake.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+          <td>
+          <div class="card mb-3" style="max-width: 720px; margin-left:20px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'images/welding_line.jpg' %}" class="img-fluid rounded-start" alt="welding_line">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Welding Line</h5>
+                  <p class="card-text">  When the strip is changed, it is necessary to weld the two coils of the strip, and the
+                    weld line is produced. Strictly speaking, this is not a defect, but it needs to be automatically
+                    detected and tracked to be circumvented in subsequent cuts.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+</html>

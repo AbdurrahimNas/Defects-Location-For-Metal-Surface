@@ -1,0 +1,68 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Metal Surface Defect Detection</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/predict">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/predict">Prediction</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href='/classes'>Classes</a>
+                  </li>
+            
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+        <div class="container">
+            <center><h1 style="margin:15px; margin-bottom: 30px;">Metal Surface Defect Detection</h1></center>
+        </div>
+        <div class="card-3 bg-info  border-info mb-3">
+            <div class="card-title text-center">
+                <h5>Submit the form to predict!</h5>
+            </div>
+            <div class="card-body text-white bg-dark mb-3">
+                <div class="row p-5 mb-5">
+                    <div class="col text-center border-info p-5 mb-5">
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{form.as_p}}    
+                                <br>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button type="submit" class="btn btn-outline-info btn-success">Predict</button>
+                                </div>
+
+                        </form>
+                    </div>
+                        <div class="col " style="margin-left: 15px;">
+                            {% if image %}
+                                <h5 class="card-title text-center bg-info">Detected Objects</h5>
+                                <image src={{image.image.url}} height="360" width="750" alt={{image.image}} class="profile-img"> 
+                            {% endif %}
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
